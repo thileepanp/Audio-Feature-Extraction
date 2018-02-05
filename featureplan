@@ -1,28 +1,28 @@
-amp_mod:AmplitudeModulation EnDecim=200  blockSize=32768  stepSize=16384
-auto_corr:AutoCorrelation ACNbCoeffs=49  blockSize=1024  stepSize=512
-comp_dom_onset_detc:ComplexDomainOnsetDetection FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-energy:Energy blocksize=1024 stepsize=512
-env: Envelope EnDecim=200  blockSize=32768  stepSize=16384
-env_stats: EnvelopeShapeStatistics EnDecim=200  blockSize=32768  stepSize=16384
-fr: Frames blockSize=1024  stepSize=512
-linear_predictor_coeff: LPC LPCNbCoeffs=2  blockSize=1024  stepSize=512
-line_spec_freq: LSF blockSize=1024  stepSize=512
-loud: Loudness FFTLength=0  FFTWindow=Hanning  LMode=Relative  blockSize=1024  stepSize=512
-mfcc: MFCC CepsIgnoreFirstCoeff=1  CepsNbCoeffs=13  FFTWindow=Hanning  MelMaxFreq=6854.0  MelMinFreq=130.0  MelNbFilters=40  blockSize=1024  stepSize=512
-magspec: MagnitudeSpectrum FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-melspec: MelSpectrum FFTWindow=Hanning  MelMaxFreq=6854.0  MelMinFreq=130.0  MelNbFilters=40  blockSize=1024  stepSize=512
-obsi: OBSI FFTLength=0  FFTWindow=Hanning  OBSIMinFreq=27.5  blockSize=1024  stepSize=512
-obsir: OBSIR DiffNbCoeffs=0  FFTLength=0  FFTWindow=Hanning  OBSIMinFreq=27.5  blockSize=1024  stepSize=512
-per_spns: PerceptualSharpness FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-per_sprd: PerceptualSpread FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_crest_fact_per_band: SpectralCrestFactorPerBand FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_dec: SpectralDecrease FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_flat: SpectralFlatness FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-apec_flat_per_band: SpectralFlatnessPerBand FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_flux: SpectralFlux FFTLength=0  FFTWindow=Hanning  FluxSupport=All  blockSize=1024  stepSize=512
-spec_roll_off: SpectralRolloff FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_shape_stats: SpectralShapeStatistics FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_slope: SpectralSlope FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-spec_var: SpectralVariation FFTLength=0  FFTWindow=Hanning  blockSize=1024  stepSize=512
-temp_shape_stats: TemporalShapeStatistics blockSize=1024  stepSize=512
-zcr: ZCR blockSize=1024  stepSize=512
+am:AmplitudeModulation EnDecim=200  blockSize=512000  stepSize=256000
+auto_corr:AutoCorrelation ACNbCoeffs=49  blockSize=512000  stepSize=256000
+comp_dom_onset_detc:ComplexDomainOnsetDetection FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+energy:Energy blockSize=512000 stepSize=256000
+env: Envelope EnDecim=200  blockSize=512000  stepSize=256000
+env_stats: EnvelopeShapeStatistics EnDecim=200  blockSize=512000  stepSize=256000
+frames: Frames blockSize=512000  stepSize=256000
+linear_predictor_coeff: LPC LPCNbCoeffs=2  blockSize=512000  stepSize=256000
+line_spec_freq: LSF blockSize=512000  stepSize=256000
+loud: Loudness FFTLength=0  FFTWindow=Hanning  LMode=Relative  blockSize=512000  stepSize=256000
+mfcc: MFCC CepsIgnoreFirstCoeff=1  CepsNbCoeffs=13  FFTWindow=Hanning  MelMaxFreq=6854.0  MelMinFreq=130.0  MelNbFilters=40  blockSize=512000  stepSize=256000
+magspec: MagnitudeSpectrum FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+melspec:MelSpectrum FFTWindow=Hanning  MelMaxFreq=6854.0  MelMinFreq=130.0  MelNbFilters=40  blockSize=512000  stepSize=256000
+obsi: OBSI FFTLength=0  FFTWindow=Hanning  OBSIMinFreq=27.5  blockSize=512000  stepSize=256000
+obsir: OBSIR DiffNbCoeffs=0  FFTLength=0  FFTWindow=Hanning  OBSIMinFreq=27.5  blockSize=512000  stepSize=256000
+per_sharp: PerceptualSharpness FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+per_spread: PerceptualSpread FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_crest_fact_per_band: SpectralCrestFactorPerBand FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_decrease: SpectralDecrease FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_flatness: SpectralFlatness FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_flatness_per_band: SpectralFlatnessPerBand FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_flux: SpectralFlux FFTLength=0  FFTWindow=Hanning  FluxSupport=All  blockSize=512000  stepSize=256000
+spec_roll_off: SpectralRolloff FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_shape_stats: SpectralShapeStatistics FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_slope: SpectralSlope FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+spec_variation: SpectralVariation FFTLength=0  FFTWindow=Hanning  blockSize=512000  stepSize=256000
+temp_shape_stats: TemporalShapeStatistics blockSize=512000  stepSize=256000
+zcr: ZCR blockSize=512000  stepSize=256000

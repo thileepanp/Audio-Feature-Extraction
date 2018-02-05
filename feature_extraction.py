@@ -37,7 +37,7 @@ output dimensions and then use hdf5 to extract all other features.
 
 from yaafelib import * #import all the features from yaafe library
 
-fp = FeaturePlan(sample_rate=25600) #the sample_rate could be changed
+fp = FeaturePlan(sample_rate=25600, resample=True) #the sample_rate could be changed
 									#also resampling can be enabled,
 									# by default it is disabled
 
@@ -57,7 +57,7 @@ afp.setOutputFormat(format='csv',
 	outDir='/home/thileepan/Dropbox/PhD/2018 work/amselected',
 	 params={'feats.keys()':'feats.values()'}) #to get .csv output
 
-afp.setOutputFormat(format='h5', 
+afp.setOutputFormat(format='h5',
 	outDir='/home/thileepan/Dropbox/PhD/2018 work/amselected',
 	 params={'feats.keys()':'feats.values()'}) #to get hdf5 output
 
